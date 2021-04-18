@@ -1,0 +1,29 @@
+#container-perfil {
+  grid-area: content;
+
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 8rem;
+      border-radius: 50%;
+      margin-bottom: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #333;
+      border-bottom: 1px solid #333;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+  }
+}

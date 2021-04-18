@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap");
+@import "./sass/Login.scss";
+@import "./sass/Home.scss";
+@import "./sass/Navbar.scss";
+@import "./sass/ContentHome.scss";
+@import "./sass/ContentMenu.scss";
+@import "./sass/ContentPerfil.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}

@@ -1,0 +1,71 @@
+#container-contentMenu {
+  grid-area: content;
+  width: 100%;
+  height: 100%;
+
+  .content {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    .row {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      grid-gap: 1rem;
+    }
+
+    .card {
+      width: 15rem;
+      height: 24rem;
+      margin: 2rem;
+      border-radius: 1rem;
+      box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.3);
+      transition: 1s;
+      cursor: pointer;
+      .imgPizza {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 90%;
+          height: auto;
+        }
+      }
+
+      .desc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        span {
+          &:nth-child(1) {
+            text-align: center;
+            font-size: 1.3rem;
+          }
+          &:nth-child(2) {
+            margin: 1rem;
+            font-size: 1rem;
+            font-style: italic;
+          }
+        }
+        p {
+          text-align: center;
+          font-weight: 600;
+
+          &::before {
+            content: "$";
+          }
+        }
+      }
+
+      &:hover {
+        transform: translateY(-20px);
+      }
+    }
+  }
+}

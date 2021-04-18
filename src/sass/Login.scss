@@ -1,0 +1,76 @@
+#container-login {
+  display: grid;
+  grid-template-areas: "bgImg login";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  .left-content {
+    grid-area: bgImg;
+    width: 100%;
+    height: 100vh;
+
+    background: url(https://i.imgur.com/psBY8YV.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .right-content {
+    grid-area: login;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #333;
+
+    border-radius: 1rem;
+
+    .tittle {
+      width: 100%;
+      margin: 3rem 0;
+
+      h2 {
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+      }
+    }
+    .btn-login {
+      width: 7rem;
+      height: 2rem;
+      border-radius: 0.2rem;
+      border: none;
+      background: purple;
+      color: white;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      svg {
+        font-size: 1.5rem;
+      }
+      span {
+        margin-left: 0.5rem;
+      }
+
+      &:hover {
+        svg,
+        span {
+          color: rgb(238, 209, 46);
+        }
+      }
+    }
+  }
+}
